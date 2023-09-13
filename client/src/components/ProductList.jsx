@@ -1,12 +1,20 @@
 import React from 'react'
 import axios from 'axios';
+import { Link } from 'react-router-dom';
     
 const ProductList = (props) => {
     return (
         <div>
-            {props.products.map( (product, i) =>
-                <p key={i}>{product.description}, {product.price}, {product.title}</p>
-            )}
+            <h2>All Products: </h2>
+            {props.products.map( (product, i) =>{
+                return (
+                    <p key={i}>
+                        <Link to={`/api/products/${product._id}`}>
+                        {product.title}
+                        </Link>
+                    </p>
+                );
+            })}
         </div>
     )
 }

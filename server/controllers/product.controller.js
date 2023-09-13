@@ -15,7 +15,7 @@ module.exports.getAllProducts = (request, response) => {
 module.exports.getProduct = (request, response) => {
   Product.findOne({ _id: request.params.id })
     .then((product) => response.json(product))
-    .catch((err) => response.json(err));
+    .catch((err) => response.status(400).json(err));
 };
 
 //* This method creates a product
