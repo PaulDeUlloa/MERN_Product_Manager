@@ -6,7 +6,7 @@ module.exports.index = (request, response) => {
 };
 
 //* This method gets all the products
-module.exports.getAllProduct = (request, response) => {
+module.exports.getAllProducts = (request, response) => {
   Product.find({})
     .then((products) => response.json(products))
     .catch((err) => response.status(400).json(err));
@@ -21,11 +21,7 @@ module.exports.getProduct = (request, response) => {
 //* This method creates a product
 module.exports.createProduct = (request, response) => {
   const { title, price, description } = request.body;
-  Product.create({
-    title,
-    price,
-    description,
-  })
+  Product.create({ title, price, description })
     .then((product) => response.json(product))
     .catch((err) => response.status(400).json(err));
 };
