@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useParams } from "react-router-dom";
+import { Link } from 'react-router-dom';
     
 const Update = (props) => {
     const { id } = useParams();
@@ -30,6 +31,7 @@ const Update = (props) => {
     
     return (
         <div>
+            <Link to={`/api/products`}>Home Page</Link>
             <h1>Update a Product</h1>
             <form onSubmit={updateProduct}>
                 <p>
