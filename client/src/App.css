@@ -39,6 +39,21 @@
 
 #detailsStyling{
   background-color: grey;
-  color: red;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  margin: 20px;
+  padding: 50px;
 }
 
+#allProductsStyling{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#listStyling{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: space-between;
+}
