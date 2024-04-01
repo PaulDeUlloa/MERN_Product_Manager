@@ -20,7 +20,12 @@ const ProductList = (props) => {
         return (
           <p key={i}>
             <div id="listStyling">
-              <Link to={`/api/products/${product._id}`}>{product.title}</Link>{" "}
+              <Link
+                id="allProductsAnchorTags"
+                to={`/api/products/${product._id}`}
+              >
+                {product.title}
+              </Link>{" "}
               <button
                 onClick={(e) => {
                   deleteProduct(product._id);
