@@ -33,8 +33,12 @@
   background-image: linear-gradient( rgb(255, 31, 31), rgb(255, 106, 0), rgb(98, 26, 252), blue);
   color: rgb(0, 0, 0);
   font-weight: 800;
-  margin: 20px;
   padding: 50px;
+}
+
+#editHomeButtons{
+  text-decoration: none;
+  list-style: none;
 }
 
 #allProductsStyling{

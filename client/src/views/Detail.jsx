@@ -15,12 +15,20 @@ const Detail = (props) => {
   }, []);
 
   return (
-    <div>
+    <div id="detailsStyling">
       <p>Title: {product.title}</p>
       <p>Price: {product.price}</p>
       <p>Description: {product.description}</p>
-      <Link to={"/products/" + product._id + "/edit"}>Edit</Link>{" "}
-      <Link to={"/api/products"}>Home</Link>
+      <button type="button" class="btn btn-light">
+        <Link id="editHomeButtons" to={"/products/" + product._id + "/edit"}>
+          Edit
+        </Link>
+      </button>{" "}
+      <button type="button" class="btn btn-light">
+        <Link id="editHomeButtons" to={"/api/products"}>
+          Home
+        </Link>
+      </button>
     </div>
   );
 };
