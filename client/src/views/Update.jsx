@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
 
 const Update = (props) => {
@@ -8,6 +8,8 @@ const Update = (props) => {
   const [title, setTitle] = useState("");
   const [price, setPrice] = useState("");
   const [description, setDescription] = useState("");
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get("http://localhost:8000/api/products/" + id).then((res) => {
@@ -25,7 +27,7 @@ const Update = (props) => {
         price,
         description,
       })
-      .then((res) => console.log(res))
+      .then(() => navigate("/api/products"))
       .catch((err) => console.error(err));
   };
 
@@ -70,7 +72,9 @@ const Update = (props) => {
             }}
           />
         </p>
-        <input type="submit" />
+        <button class="btn btn-light" type="submit">
+          Submit
+        </button>
       </form>
     </div>
   );
