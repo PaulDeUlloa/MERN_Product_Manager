@@ -22,7 +22,7 @@ export default () => {
   };
   //onChange to update title and price
   return (
-    <form onSubmit={onSubmitHandler}>
+    <form onSubmit={onSubmitHandler} id="formStyling">
       <p>
         <label>Title: </label>
         <br />
