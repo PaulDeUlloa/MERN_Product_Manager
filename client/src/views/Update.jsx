@@ -27,7 +27,7 @@ const Update = (props) => {
         price,
         description,
       })
-      .then(() => navigate("/api/products"))
+      .then(() => navigate("/"))
       .catch((err) => console.error(err));
   };
 
