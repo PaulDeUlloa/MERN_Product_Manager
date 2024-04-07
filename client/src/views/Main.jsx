@@ -21,6 +21,7 @@ const Main = (props) => {
     setProducts(products.filter((product) => product._id !== productId));
   };
 
+  //this is returning the product form and product list at the bottom.
   return (
     <div id="detailsStyling">
       <ProductForm />
