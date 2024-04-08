@@ -31,6 +31,8 @@ const Update = (props) => {
       .catch((err) => console.error(err));
   };
 
+  //This is the updates page once a user clicks edit on a product.
+
   return (
     <div id="detailsStyling">
       <Link to={`/api/products`}>Home Page</Link>
