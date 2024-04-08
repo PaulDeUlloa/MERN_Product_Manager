@@ -14,6 +14,7 @@ const Detail = (props) => {
       .catch((err) => console.error(err));
   }, []);
 
+  //this is the details page once a user clicks on a dashboard product link
   return (
     <div id="detailsStyling">
       <p>Title: {product.title}</p>
