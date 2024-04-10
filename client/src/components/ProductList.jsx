@@ -13,6 +13,8 @@ const ProductList = (props) => {
       })
       .catch((err) => console.error(err));
   };
+
+  //this file is our list of products when a user creates a user it will appear here.
   return (
     <div id="allProductsStyling">
       <h2>All Products: </h2>

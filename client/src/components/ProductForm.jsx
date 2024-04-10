@@ -21,6 +21,8 @@ export default () => {
       .catch((err) => console.log(err));
   };
   //onChange to update title and price
+
+  //this is our product form which is used for users to create a product.
   return (
     <form onSubmit={onSubmitHandler} id="formStyling">
       <p>
