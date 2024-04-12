@@ -26,6 +26,7 @@ module.exports.createProduct = (request, response) => {
     .catch((err) => response.status(400).json(err));
 };
 
+//* This method updates a product
 module.exports.updateProduct = (request, response) => {
   Product.findOneAndUpdate({ _id: request.params.id }, request.body, {
     new: true,
@@ -34,6 +35,7 @@ module.exports.updateProduct = (request, response) => {
     .catch((err) => response.status(400).json(err));
 };
 
+//* This method deletes a product
 module.exports.deleteProduct = (request, response) => {
   Product.deleteOne({ _id: request.params.id })
     .then((deleteConfirmation) => response.json(deleteConfirmation))
