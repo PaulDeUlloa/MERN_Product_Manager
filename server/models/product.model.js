@@ -8,6 +8,6 @@ const ProductSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
-//This how we make our product model
+//This how we make our product model and we use title,price, and description for our model.
 
 module.exports.Product = mongoose.model("Product", ProductSchema);
