@@ -16,7 +16,7 @@ const Main = (props) => {
       })
       .catch((err) => console.error(err));
   }, []);
-
+  //to delete a product from the server we use this code.
   const removeFromDom = (productId) => {
     setProducts(products.filter((product) => product._id !== productId));
   };
