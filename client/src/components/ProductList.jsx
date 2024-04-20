@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
 
+//to delete a product from the server we use this code.
 const ProductList = (props) => {
   const { removeFromDom } = props;
 
