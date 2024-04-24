@@ -25,6 +25,15 @@ export default () => {
   //this is our product form which is used for users to create a product.
   return (
     <form onSubmit={onSubmitHandler} id="formStyling">
+      <div>
+        <p>
+          Welcome to our products page, below is where you can fill out which
+          products you would like to post to our community page.
+        </p>
+      </div>
+      <div>
+        <h1>Product Form</h1>
+      </div>
       <p>
         <label>Title: </label>
         <br />
