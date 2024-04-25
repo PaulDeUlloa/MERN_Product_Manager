@@ -7,3 +7,5 @@ module.exports = function (app) {
   app.patch("/api/products/:id", ProductController.updateProduct);
   app.delete("/api/products/:id", ProductController.deleteProduct);
 };
+
+//? Need To make home route to all products
