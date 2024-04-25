@@ -18,6 +18,7 @@ const Detail = (props) => {
 
   return (
     <div id="detailsStyling">
+      <h1>Product Details:</h1>
       <p>Title: {product.title}</p>
       <p>Price: {product.price}</p>
       <p>Description: {product.description}</p>

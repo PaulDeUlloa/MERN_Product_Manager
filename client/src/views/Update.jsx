@@ -36,7 +36,7 @@ const Update = (props) => {
   return (
     <div id="detailsStyling">
       <Link to={`/api/products`}>Home Page</Link>
-      <h1>Update a Product</h1>
+      <h1>Update a Product:</h1>
       <form onSubmit={updateProduct}>
         <p>
           <label>Title: </label>
