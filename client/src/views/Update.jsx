@@ -35,7 +35,6 @@ const Update = (props) => {
 
   return (
     <div id="detailsStyling">
-      <Link to={`/api/products`}>Home Page</Link>
       <h1>Update a Product:</h1>
       <form onSubmit={updateProduct}>
         <p>
@@ -76,6 +75,11 @@ const Update = (props) => {
         </p>
         <button class="btn btn-light" type="submit">
           Submit
+        </button>{" "}
+        <button type="button" class="btn btn-light">
+          <Link id="editHomeButtons" to={"/"}>
+            Home
+          </Link>
         </button>
       </form>
     </div>
