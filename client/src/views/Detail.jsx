@@ -27,7 +27,7 @@ const Detail = (props) => {
         </Link>
       </button>{" "}
       <button type="button" class="btn btn-light">
-        <Link id="editHomeButtons" to={"/api/products"}>
+        <Link id="editHomeButtons" to={"/"}>
           Home
         </Link>
       </button>
