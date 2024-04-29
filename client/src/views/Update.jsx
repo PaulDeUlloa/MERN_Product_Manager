@@ -32,6 +32,7 @@ const Update = (props) => {
   };
 
   //This is the updates page once a user clicks edit on a product.
+  //!Might want to change UI in the future.
 
   return (
     <div id="detailsStyling">
