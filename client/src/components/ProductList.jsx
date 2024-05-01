@@ -16,6 +16,7 @@ const ProductList = (props) => {
   };
 
   //this file is our list of products when a user creates a user it will appear here.
+  //TODO: update all buttons with improved UI.
   return (
     <div id="allProductsStyling">
       <h2>All Products: </h2>
