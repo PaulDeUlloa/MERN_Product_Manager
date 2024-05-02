@@ -12,3 +12,6 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+
+// Need to add browser router here to enable navigation between views from different
+// components in a React application, allows the browser URL to be changed, and keeps the UI in sync with the URL.
