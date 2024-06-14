@@ -55,8 +55,9 @@ export default () => {
       <p>
         <label>Description: </label>
         <br />
-        <input
-          type="text"
+        <textarea
+          rows="4"
+          cols="50"
           onChange={(e) => setDescription(e.target.value)}
           value={description}
         />

@@ -65,8 +65,9 @@ const Update = (props) => {
         <p>
           <label>Description: </label>
           <br />
-          <input
-            type="text"
+          <textarea
+            rows="4"
+            cols="50"
             name="description"
             value={description}
             onChange={(e) => {
