@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default () => {
   //keep track of what is being typed via useState hook
@@ -62,9 +63,13 @@ export default () => {
           value={description}
         />
       </p>
-      <button class="btn btn-light" type="submit">
-        Submit
+      <button type="button" class="btn btn-light">
+        <Link id="editHomeButtons" to={"/"}>
+          Submit
+        </Link>
       </button>
     </form>
   );
 };
+
+//TODO: Need to fix submit button to redirect to home page with a refresh page.
