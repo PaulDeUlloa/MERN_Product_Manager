@@ -14,6 +14,7 @@ const Detail = (props) => {
       .catch((err) => console.error(err));
   }, []);
 
+  //We are using arrow functions a lot which is clean varies on where you should use it.!
   //this is the details page, where a user may click on a dashboard product link to view their details
 
   return (
