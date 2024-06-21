@@ -20,9 +20,9 @@ const Detail = (props) => {
   return (
     <div id="detailsStyling">
       <h1>Product Details:</h1>
-      <p>Title: {product.title}</p>
-      <p>Price: {product.price}</p>
-      <p>Description: {product.description}</p>
+      <p id="detailsTitles">Title: {product.title}</p>
+      <p id="detailsTitles">Price: {product.price}</p>
+      <p id="detailsTitles">Description: {product.description}</p>
       <button type="button" class="btn btn-light">
         <Link id="editHomeButtons" to={"/products/" + product._id + "/edit"}>
           Edit

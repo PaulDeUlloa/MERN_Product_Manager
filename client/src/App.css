@@ -36,6 +36,10 @@
   padding: 50px;
 }
 
+#detailsTitles{
+  color: white;
+}
+
 #editHomeButtons{
   text-decoration: none;
   list-style: none;
